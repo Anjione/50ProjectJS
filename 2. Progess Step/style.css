@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: fff;
+  background-color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ body {
     width: 350px;
 }
 
-.progress.container::before {
+.progress-container::before {
     content: '';
     background-color: var(--line-border-empty);
     position: absolute;
@@ -59,7 +59,7 @@ body {
 }
 
 .circle {
-    background-color: 3fff;
+    background-color: #fff;
     color: #949494;
     border-radius: 50%;
     height: 30px;
@@ -68,8 +68,34 @@ body {
     align-items: center;
     justify-content: center;
     border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
 }
 
 .circle.active {
     border-color: var(--line-border-fill);
-  }
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}

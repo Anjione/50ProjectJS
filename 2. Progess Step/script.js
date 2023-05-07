@@ -8,7 +8,7 @@ let currentActive = 1
 //Kiểm tra vị trí đang active khi nhấn next
 next.addEventListener('click', () => {
     currentActive++
-    console.log("check-----", currentActive)
+    console.log("check next-----", currentActive)
     if (currentActive > circles.length) {
         currentActive = circles.length
     }
@@ -19,6 +19,7 @@ next.addEventListener('click', () => {
 //Kiểm tra vị trí đang active khi nhấn prev
 prev.addEventListener('click', () => {
     currentActive--
+    console.log("check prev-----", currentActive)
     if (currentActive < 1){
         currentActive = 1
     }
